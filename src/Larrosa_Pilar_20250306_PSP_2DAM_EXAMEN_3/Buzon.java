@@ -30,35 +30,35 @@ public class Buzon {
 
     }   // notificar()
 
-    public char getTurno() {
+    public synchronized char getTurno() {
         return a_Turno;
     }
 
-    public void setTurno(char p_Turno) {
+    public synchronized void setTurno(char p_Turno) {
         a_Turno = p_Turno;
     }
 
-    public String getMayus() {
+    public synchronized String getMayus() {
         return a_Mayus;
     }
 
-    public void setMayus(String p_Mayus) {
+    public synchronized void setMayus(String p_Mayus) {
         a_Mayus = p_Mayus;
     }
 
-    public String getMinus() {
+    public synchronized String getMinus() {
         return a_Minus;
     }
 
-    public void setMinus(String p_Minus) {
+    public synchronized void setMinus(String p_Minus) {
         a_Minus = p_Minus;
     }
 
-    public int getContador() {
+    public synchronized int getContador() {
         return a_Contador;
     }
 
-    public void incContador() {
+    public synchronized void incContador() {
 
         a_Contador++;
 
@@ -105,19 +105,19 @@ public class Buzon {
 
     }   // incContador()
 
-    public int getVuelta() {
+    public synchronized int getVuelta() {
         return a_Vuelta;
     }
 
-    public void setVuelta(int p_Vuelta) {
+    public synchronized void setVuelta(int p_Vuelta) {
         a_Vuelta = p_Vuelta;
     }
 
-    public boolean isFinalizar() {
+    public synchronized boolean isFinalizar() {
         return a_Finalizar;
     }
 
-    public void setFinalizar(boolean a_Finalizar) {
+    public synchronized void setFinalizar(boolean a_Finalizar) {
         a_Finalizar = true;
     }
 
