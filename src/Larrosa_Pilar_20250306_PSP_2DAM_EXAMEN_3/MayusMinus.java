@@ -11,7 +11,7 @@ public class MayusMinus {
     public static final String NOMBRE_HILO_IMP = "HILO-IMPRESOR";
     public static final int MS_PAUSA_IMPRIMIR = 1_000;
     public static final String TEXTO_A_PROCESAR = "En un lugar de la Mancha";
-    public static final boolean EJECUCION_INFINITA = true;
+    public static final boolean EJECUCION_INFINITA = false;
 
     // Objeto para realizar el intercambio de información entre las clases.
     private static volatile Buzon a_Buzon = new Buzon();
